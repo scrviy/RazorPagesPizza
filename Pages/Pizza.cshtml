@@ -1,7 +1,7 @@
 ﻿@page
 @using RazorPagesPizza.Models
 @model RazorPagesPizza.Pages.PizzaModel
-@ {
+@{
     ViewData["Title"] = "Pizza List";
 }
 
@@ -18,7 +18,7 @@
         <label asp-for="NewPizza.Price"></label>
         <input asp-for="NewPizza.Price" class="mr-5" />
         <label asp-for="NewPizza.IsGlutenFree">Gluten Free</label>
-        <input type="checkbox" asp-for="NewPizza.isGlutenFree" class="mr-5">
+        <input type="checkbox" asp-for="NewPizza.IsGlutenFree" class="mr-5">
         <button class="btn btn-primary">Add</button>
     </div>
 </form>
